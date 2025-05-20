@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Igreja Cristã Divina Herança</title>
+    <style>
+        /* Reset e estilo base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fafafa;
+            color: #222;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #004080;
+        }
+        header {
+            position: relative;
+            height: 350px;
+            background: url('https://via.placeholder.com/1200x350?text=Foto+da+Igreja') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header .overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1 {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 0 10px;
+            text-align: center;
+            max-width: 900px;
+            font-style: italic;
+            line-height: 1.4;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+        nav {
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        nav a {
+            background: #004080;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover,
+        nav a:focus {
+            background: #002d55;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+        section h2 {
+            font-size: 1.8rem;
+            color: #004080;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #004080;
+            padding-bottom: 8px;
+        }
+        /* Nossa História */
+        #nossa-historia p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        #nossa-historia .photos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        #nossa-historia .photos img {
+            width: calc(50% - 15px);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            object-fit: cover;
+            max-height: 200px;
+        }
+        /* Nossos Eventos */
+        #nossos-eventos ul {
+            list-style: none;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #333;
+        }
+        #nossos-eventos ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        #nossos-eventos ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #004080;
+            font-weight: bold;
+        }
+        /* Contato / Rodapé */
+        footer {
+            background: #004080;
+            color: #f0f0f0;
+            padding: 30px 15px 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        footer address {
+            font-style: normal;
+            margin-bottom: 25px;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+        footer form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        footer form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        footer form input[type="text"],
+        footer form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        footer form textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        footer form button {
+            background-color: #f0f0f0;
+            color: #004080;
+            font-weight: 700;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        footer form button:hover,
+        footer form button:focus {
+            background-color: #d9d9d9;
+        }
+        /* Responsivo */
+        @media(max-width:600px) {
+            #nossa-historia .photos img {
+                width: 100%;
+            }
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+            header {
+                height: 250px;
+            }
+            header h1 {
+                font-size: 1.1rem;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <div class="overlay"></div>
+        <h1>¹³ Tu, porém, vai até ao fim; porque descansarás, e te levantarás na tua herança, no fim dos dias.<br/><small>(Daniel 12:13)</small></h1>
+    </header>
+
+    <nav role="navigation" aria-label="Menu principal">
+        <a href="#nossa-historia">Nossa História</a>
+        <a href="#nossos-eventos">Nossos Eventos</a>
+        <a href="#contato">Nosso Contato</a>
+    </nav>
+
+    <main>
+        <section id="nossa-historia" tabindex="-1">
+            <h2>Nossa História</h2>
+            <p>A Igreja Cristã Divina Herança nasceu com o propósito de levar a palavra de Deus a todos os corações, promovendo fé, esperança e amor na comunidade de Vespasiano e região. Fundada por um grupo de fiéis dedicados, a igreja tem crescido e fortalecido sua missão evangelizadora através de cultos, ações sociais e eventos diversos.</p>
+            <div class="photos" aria-label="Fotos da Igreja Cristã Divina Herança">
+                <img src="https://via.placeholder.com/400x250?text=Foto+1" alt="Foto da igreja 1" />
+                <img src="https://via.placeholder.com/400x250?text=Foto+2" alt="Foto da igreja 2" />
+                <img src="https://via.placeholder.com/400x250?text=Foto+3" alt="Foto da igreja 3" />
+                <img src="https://via.placeholder.com/400x250?text=Foto+4" alt="Foto da igreja 4" />
+                <img src="https://via.placeholder.com/400x250?text=Foto+5" alt="Foto da igreja 5" />
+            </div>
+        </section>
+
+        <section id="nossos-eventos" tabindex="-1">
+            <h2>Nossos Eventos</h2>
+            <p>Acompanhe os dias e horários dos nossos cultos e eventos.</p>
+            <ul aria-label="Agenda de cultos">
+                <li>Domingos: Culto Principal às 10:00h</li>
+                <li>Quartas-feiras: Estudo Bíblico às 19:30h</li>
+                <li>Sextas-feiras: Culto de Louvor às 20:00h</li>
+                <li>Último sábado do mês: Encontro de jovens às 18:00h</li>
+                <li>Eventos especiais serão divulgados aqui!</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contato" tabindex="-1" role="contentinfo">
+        <address>
+            <strong>Endereço:</strong><br />
+            Rua Serra Negra, 300, Bairro Serra Dourada,<br />
+            Vespasiano - Minas Gerais
+        </address>
+        <section aria-labelledby="receba-oracao-title">
+            <h2 id="receba-oracao-title" style="color:#f0f0f0; margin-bottom: 10px;">Receba Oração</h2>
+            <form action="#" method="POST" onsubmit="alert('Pedido de oração enviado!'); return false;">
+                <label for="nome">Nome para oração:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome" required />
+
+                <label for="motivo">Motivo da oração:</label>
+                <textarea id="motivo" name="motivo" placeholder="Descreva o motivo" required></textarea>
+
+                <button type="submit" aria-label="Enviar pedido de oração">Enviar</button>
+            </form>
+        </section>
+    </footer>
+</body>
+</html>
